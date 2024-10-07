@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فیلم راموکس</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>فیلم راموکس</h1>
+        <nav>
+            <a href="#upload">آپلود</a>
+            <a href="#login">ورود</a>
+            <a href="#reports">گزارشات</a>
+        </nav>
+    </header>
+
+    <section id="upload">
+        <h2>آپلود فیلم</h2>
+        <form id="uploadForm">
+            <input type="text" placeholder="عنوان" required>
+            <input type="file" required>
+            <button type="submit">آپلود</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>ورود به حساب</h2>
+        <form id="loginForm">
+            <input type="email" placeholder="ایمیل" required>
+            <input type="password" placeholder="رمز عبور" required>
+            <button type="submit">ورود</button>
+        </form>
+    </section>
+
+    <section id="reports">
+        <h2>گزارش فیلم</h2>
+        <form id="reportForm">
+            <input type="text" placeholder="عنوان فیلم" required>
+            <textarea placeholder="دلیل گزارش" required></textarea>
+            <button type="submit">ارسال گزارش</button>
+        </form>
+    </section>
+
+    <div id="adminPanel" style="display: none;">
+        <h2>پنل مدیریت</h2>
+        <h3>گزارشات:</h3>
+        <ul id="reportList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
